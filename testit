@@ -1,0 +1,4 @@
+echo -n "Test in "
+podman run -e DEBUG=$DEBUG --rm -it -v $(pwd):/test docker.io/library/python:3 /test/runcmd /usr/bin/python3 /test/demo1.py
+echo -en "\nTest in "
+podman run -e DEBUG=$DEBUG --rm -it -v $(pwd):/test docker.io/library/python:2.7 /test/runcmd /usr/bin/python2 /test/demo1.py
